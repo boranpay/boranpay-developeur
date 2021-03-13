@@ -11,7 +11,7 @@ import { ToastContainer } from 'react-toastify'
 import { ThemeContext } from './utility/context/ThemeColors'
 
 // ** Spinner (Splash Screen)
-import Spinner from './@core/components/spinner/Fallback-spinner'
+import Spinner from './@core/components/spinner/Loading-spinner'
 
 // ** Ripple Button
 import './@core/components/ripple-button'
