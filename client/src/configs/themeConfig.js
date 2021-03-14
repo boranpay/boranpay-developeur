@@ -3,18 +3,18 @@
 //Template config options
 const themeConfig = {
   app: {
-    appName: 'Vuexy',
-    appLogoImage: require('@src/assets/images/logo/logo.svg').default
+    appName: `${process.env.REACT_APP_NAME}`
+    /**appLogoImage: require('@src/assets/images/logo/logo.svg').default*/
   },
   layout: {
     isRTL: false,
-    skin: 'light', // light, dark, bordered, semi-dark
+    skin: 'semi-dark', // light, dark, bordered, semi-dark
     routerTransition: 'fadeIn', // fadeIn, fadeInLeft, zoomIn, none or check this for more transition https://animate.style/
     type: 'vertical', // vertical, horizontal
     contentWidth: 'full', // full, boxed
     menu: {
       isHidden: false,
-      isCollapsed: false
+      isCollapsed: true
     },
     navbar: {
       // ? For horizontal menu, navbar type will work for navMenu type

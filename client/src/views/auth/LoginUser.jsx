@@ -27,7 +27,7 @@ const LoginUser = () => {
         await axios.post(`${process.env.REACT_APP_SERVER_NODE_URL}/login`, data)
             .then((res) => {
                 if (res.data.accessToken) {
-                    localStorage.setItem('userIt', JSON.stringify(res.data))
+                    localStorage.setItem('userData', JSON.stringify(res.data))
                 }
                 toast.success(
                     <SuccessToast name={'Success'} description={'Welcome'} />, {
