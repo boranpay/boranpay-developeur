@@ -1,0 +1,15 @@
+---
+application:
+  name: "boranpay-developeur"
+  project: "boranpay"
+  organization: "QoveryCommunity"
+databases:
+- type: "MYSQL"
+  name: "borapay"
+  version: "8.0"
+routers:
+- name: "main-boranpay-developeur"
+  routes:
+  - application_name: "boranpay-developeur"
+    paths:
+    - "/*"
